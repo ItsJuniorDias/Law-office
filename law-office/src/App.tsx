@@ -5,6 +5,7 @@ import {
   SectionCard,
   ClientSection,
   SectionHelp,
+  Footer,
 } from "./components";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <SectionCard />
       <ClientSection />
       <SectionHelp />
+      <Footer />
     </>
   );
 }
