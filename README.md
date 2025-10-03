@@ -1,38 +1,31 @@
-# ⚖️ Lemes Advocacia - Law Office Website
+# Projeto React + Vite 🚀
 
-Site institucional moderno e responsivo para o escritório de advocacia **Lemes Advocacia**, desenvolvido em **React + Vite + TailwindCSS**.
-
----
-
-## 📌 Sobre o Projeto
-O objetivo do site é transmitir **credibilidade, profissionalismo e confiança** para clientes em potencial, destacando:
-
-- Áreas de atuação
-- Informações sobre o escritório
-- Depoimentos de clientes
-- Contato rápido e formulário
-- Inscrição em newsletter
-
-O design foi construído para ser **leve, responsivo e elegante**, com foco em experiência do usuário.
+Este projeto foi criado utilizando [Vite](https://vitejs.dev/) + [React](https://react.dev/).  
+Vite é uma ferramenta de build rápida e moderna para projetos front-end.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📦 Requisitos
 
-- [React](https://react.dev/) (com Vite)
-- [TailwindCSS](https://tailwindcss.com/) para estilização
-- [Lucide Icons](https://lucide.dev/) para ícones
-- [React Slick](https://react-slick.neostack.com/) para carrosséis
-- [PostCSS + Autoprefixer](https://postcss.org/) para compatibilidade
+Antes de começar, verifique se você possui instalado em sua máquina:
+
+- [Node.js](https://nodejs.org/) (versão 16 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
 ---
 
-## 📂 Estrutura de Pastas
+## ▶️ Como rodar o projeto
 
-```bash
-src/
- ├── assets/          # Imagens, ícones, logos
- ├── components/      # Componentes reutilizáveis (Header, Footer, etc)
- ├── pages/           # Páginas principais do site    
- ├── App.jsx          # Arquivo principal React
- └── main.jsx         # Ponto de entrada da aplicação
+1. **Clonar o repositório**
+   ```bash
+   git clone https://github.com/ItsJuniorDias/Law-office.git
+   cd Law-office
+   npm i
+
+   npm run dev
+
+2. **Gerar build de produção
+   ```bash
+   npm run build
+   npm run preview  
+  
