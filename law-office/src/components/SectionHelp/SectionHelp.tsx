@@ -1,6 +1,15 @@
 import background_help from "../../assets/background-help.png";
 
 export default function SectionHelp() {
+  const phoneNumber = "5517997558800"; // coloque seu número com DDI e DDD
+  const message = "Olá, gostaria de mais informações!";
+
+  const handleContact = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank"); // abre em uma nova aba
+  };
   return (
     <section
       className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center text-center overflow-hidden"
@@ -21,7 +30,10 @@ export default function SectionHelp() {
         <h2 className="text-2xl md:text-4xl font-semibold mb-4">
           Como podemos te ajudar?
         </h2>
-        <button className="px-6 py-2 bg-white text-black font-medium rounded-lg shadow hover:bg-gray-100 transition">
+        <button
+          onClick={() => handleContact()}
+          className="px-6 py-2 bg-white text-black font-medium rounded-lg shadow hover:bg-gray-100 transition"
+        >
           Fale Conosco
         </button>
       </div>

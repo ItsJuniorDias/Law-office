@@ -39,6 +39,16 @@ const areas = [
 ];
 
 export default function SectionActivy() {
+  const phoneNumber = "5517997558800"; // coloque seu número com DDI e DDD
+  const message = "Olá, gostaria de mais informações!";
+
+  const handleContact = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank"); // abre em uma nova aba
+  };
+
   return (
     <section id="areas" className="w-full max-w-7xl mx-auto px-6 py-20">
       {/* Título */}
@@ -73,7 +83,10 @@ export default function SectionActivy() {
 
       {/* Botão */}
       <div className="mt-12 flex justify-center">
-        <button className="px-8 py-3 bg-[#0A1A2F] text-white rounded-md font-medium shadow hover:bg-[#0c223b] transition">
+        <button
+          onClick={() => handleContact()}
+          className="px-8 py-3 bg-[#0A1A2F] text-white rounded-md font-medium shadow hover:bg-[#0c223b] transition"
+        >
           Entrar em Contato
         </button>
       </div>

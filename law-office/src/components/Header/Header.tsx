@@ -7,6 +7,16 @@ import { ChevronDown, Menu, X } from "lucide-react"; // ícones
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const phoneNumber = "5517997558800"; // coloque seu número com DDI e DDD
+  const message = "Olá, gostaria de mais informações!";
+
+  const handleContact = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank"); // abre em uma nova aba
+  };
+
   return (
     <div
       className="relative w-full min-h-[912px] bg-center bg-cover overflow-x-hidden"
@@ -34,7 +44,10 @@ export default function Header() {
             <a href="#about" className="hover:text-gray-300">
               Sobre nós
             </a>
-            <button className="ml-6 px-4 py-2 font-medium bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
+            <button
+              onClick={() => handleContact()}
+              className="ml-6 px-4 py-2 font-medium bg-white text-black rounded-md shadow hover:bg-gray-100 transition"
+            >
               Solicitar contato
             </button>
           </nav>

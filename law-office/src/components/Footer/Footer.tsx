@@ -12,14 +12,14 @@ export default function Footer() {
             <Phone className="w-5 h-5 text-yellow-500" />
             <div>
               <p className="font-semibold">Contato</p>
-              <p className="text-sm">11 11111-1111</p>
+              <p className="text-sm">17 99755-8800</p>
             </div>
           </div>
           <div className="flex items-start gap-3 mb-4">
             <Mail className="w-5 h-5 text-yellow-500" />
             <div>
               <p className="font-semibold">E-mail</p>
-              <p className="text-sm">contato@mendesevalente.com</p>
+              <p className="text-sm">lemessadvocacia@gmail.com</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
