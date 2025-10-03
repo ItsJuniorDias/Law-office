@@ -1,9 +1,12 @@
 // src/components/Header.jsx
+import { useState } from "react";
 import logo from "../../assets/logo.svg";
 import bgHeader from "../../assets/body-header.png";
-import { ChevronDown } from "lucide-react"; // usando lucide-react para ícone
+import { ChevronDown, Menu, X } from "lucide-react"; // ícones
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div
       className="relative w-full h-[912px] bg-center bg-cover"
@@ -14,14 +17,14 @@ export default function Header() {
 
       {/* Header fixo com blur */}
       <header className="fixed top-0 left-0 w-full z-50 h-20 bg-black/20 backdrop-blur-md">
-        <div className="flex items-center justify-between max-w-7xl mx-auto px-6 h-full text-white">
+        <div className="flex items-center justify-between max-w-7xl mx-auto px-4 md:px-6 h-full text-white">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img src={logo} alt="Logo" className="h-10 w-auto" />
           </div>
 
-          {/* Navegação */}
-          <nav className="flex items-center space-x-8 text-sm">
+          {/* Navegação Desktop */}
+          <nav className="hidden md:flex items-center space-x-8 text-sm">
             <a href="#" className="font-semibold">
               Home
             </a>
@@ -31,35 +34,59 @@ export default function Header() {
             <a href="#" className="hover:text-gray-300">
               Sobre nós
             </a>
+            <button className="ml-6 px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
+              Solicitar contato
+            </button>
           </nav>
 
-          {/* Botão */}
-          <button className="ml-6 px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
-            Solicitar contato
+          {/* Botão menu mobile */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden focus:outline-none"
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
+
+        {/* Menu Mobile */}
+        {menuOpen && (
+          <div className="md:hidden absolute top-20 left-0 w-full bg-black/90 backdrop-blur-lg text-white flex flex-col items-center py-6 space-y-4">
+            <a href="#" className="font-semibold">
+              Home
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              Áreas de atuação
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              Sobre nós
+            </a>
+            <button className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
+              Solicitar contato
+            </button>
+          </div>
+        )}
       </header>
 
-      <section className="relative w-full h-[912px] bg-center bg-cover flex flex-col">
-        {/* Conteúdo */}
-        <div className="gap-8 relative flex flex-col items-center justify-center text-center text-white h-full px-6">
+      {/* Hero Section */}
+      <section className="relative w-full h-[912px] flex flex-col">
+        <div className="gap-6 relative flex flex-col items-center justify-center text-center text-white h-full px-4">
           {/* Logo */}
           <img src={logo} alt="Logo" className="h-10 w-auto" />
 
           {/* Texto principal */}
-          <h1 className="text-4xl md:text-5xl font-bold leading-snug">
-            Seu direito e a sua tranquilidade <br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
+            Seu direito e a sua tranquilidade <br className="hidden sm:block" />
             Jurídica é a nossa Missão
           </h1>
 
           {/* Subtexto */}
-          <p className="mt-6 text-lg text-gray-200">
+          <p className="mt-4 text-base sm:text-lg text-gray-200">
             Fale com um dos nossos advogados →
           </p>
 
           {/* Ícone mouse scroll */}
-          <div className="absolute bottom-64 flex justify-center">
-            <ChevronDown className="w-12 h-12 animate-bounce" />
+          <div className="absolute bottom-44 sm:bottom-24 flex justify-center">
+            <ChevronDown className="w-10 h-10 sm:w-12 sm:h-12 animate-bounce" />
           </div>
         </div>
       </section>

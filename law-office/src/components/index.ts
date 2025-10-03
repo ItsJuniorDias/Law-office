@@ -1,3 +1,4 @@
 import Header from "./Header/Header";
+import SectionActivy from "./SectionActivy/SectionActivy";
 
-export { Header } 
+export { Header, SectionActivy } 

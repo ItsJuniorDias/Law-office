@@ -1,11 +1,13 @@
 import "./App.css";
 
-import { Header } from "./components";
+import { Header, SectionActivy } from "./components";
 
 function App() {
   return (
     <>
       <Header />
+
+      <SectionActivy />
     </>
   );
 }
