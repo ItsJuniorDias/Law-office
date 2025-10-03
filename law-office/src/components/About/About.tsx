@@ -54,11 +54,11 @@ export default function About() {
 
         {/* Imagem com moldura */}
         <div className="flex-1 flex justify-center">
-          <div className="relative rounded-lg border-[12px] border-yellow-500 ">
+          <div className="relative border-[16px] border-yellow-500 rounded-tr-lg rounded-bl-lg">
             <img
               src={thumbnail}
               alt="Advogado"
-              className="w-[320px] h-auto object-cover rounded-lg shadow-lg"
+              className="w-[320px] h-auto object-cover shadow-lg rounded-tr-lg rounded-bl-lg"
             />
           </div>
         </div>
