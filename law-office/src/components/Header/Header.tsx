@@ -25,16 +25,16 @@ export default function Header() {
 
           {/* Navegação Desktop */}
           <nav className="hidden md:flex items-center space-x-8 text-sm">
-            <a href="#" className="font-semibold">
+            <a href="#" className="hover:text-gray-300">
               Home
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#areas" className="hover:text-gray-300">
               Áreas de atuação
             </a>
             <a href="#" className="hover:text-gray-300">
               Sobre nós
             </a>
-            <button className="ml-6 px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
+            <button className="ml-6 px-4 py-2 font-medium bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
               Solicitar contato
             </button>
           </nav>
@@ -54,7 +54,7 @@ export default function Header() {
             <a href="#" className="font-semibold">
               Home
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#areas" className="hover:text-gray-300">
               Áreas de atuação
             </a>
             <a href="#" className="hover:text-gray-300">
@@ -85,9 +85,12 @@ export default function Header() {
           </p>
 
           {/* Ícone mouse scroll */}
-          <div className="absolute bottom-44 sm:bottom-24 flex justify-center">
-            <ChevronDown className="w-10 h-10 sm:w-12 sm:h-12 animate-bounce" />
-          </div>
+          <a
+            href="#areas"
+            className="absolute bottom-44 sm:bottom-64 flex justify-center cursor-pointer"
+          >
+            <ChevronDown className="w-10 h-10 sm:w-12 sm:h-12 animate-bounce text-white" />
+          </a>
         </div>
       </section>
     </div>

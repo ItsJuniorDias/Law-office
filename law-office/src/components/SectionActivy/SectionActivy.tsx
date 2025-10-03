@@ -40,7 +40,7 @@ const areas = [
 
 export default function SectionActivy() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-20">
+    <section id="areas" className="w-full max-w-7xl mx-auto px-6 py-20">
       {/* Título */}
       <div className="mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 flex items-center gap-3">
