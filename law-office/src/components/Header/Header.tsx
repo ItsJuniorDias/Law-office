@@ -31,7 +31,7 @@ export default function Header() {
             <a href="#areas" className="hover:text-gray-300">
               Áreas de atuação
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#about" className="hover:text-gray-300">
               Sobre nós
             </a>
             <button className="ml-6 px-4 py-2 font-medium bg-white text-black rounded-md shadow hover:bg-gray-100 transition">
@@ -57,7 +57,7 @@ export default function Header() {
             <a href="#areas" className="hover:text-gray-300">
               Áreas de atuação
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#about" className="hover:text-gray-300">
               Sobre nós
             </a>
             <button className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-100 transition">

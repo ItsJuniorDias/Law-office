@@ -1,10 +1,11 @@
-import { Header, SectionActivy } from "./components";
+import { Header, SectionActivy, About } from "./components";
 
 function App() {
   return (
     <>
       <Header />
       <SectionActivy />
+      <About />
     </>
   );
 }
