@@ -1,4 +1,11 @@
-import { Header, SectionActivy, About } from "./components";
+import {
+  Header,
+  SectionActivy,
+  About,
+  SectionCard,
+  ClientSection,
+  SectionHelp,
+} from "./components";
 
 function App() {
   return (
@@ -6,6 +13,9 @@ function App() {
       <Header />
       <SectionActivy />
       <About />
+      <SectionCard />
+      <ClientSection />
+      <SectionHelp />
     </>
   );
 }

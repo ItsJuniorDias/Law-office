@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <div
-      className="relative w-full h-[912px] bg-center bg-cover"
+      className="relative w-full min-h-[912px] bg-center bg-cover overflow-x-hidden"
       style={{ backgroundImage: `url(${bgHeader})` }}
     >
       {/* Overlay preto na section inteira */}
@@ -50,7 +50,7 @@ export default function Header() {
 
         {/* Menu Mobile */}
         {menuOpen && (
-          <div className="md:hidden absolute top-20 left-0 w-full bg-black/90 backdrop-blur-lg text-white flex flex-col items-center py-6 space-y-4">
+          <div className="md:hidden fixed top-20 left-0 w-full bg-black/90 backdrop-blur-lg text-white flex flex-col items-center py-6 space-y-4 z-40">
             <a href="#" className="font-semibold">
               Home
             </a>
@@ -68,8 +68,8 @@ export default function Header() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[912px] flex flex-col">
-        <div className="gap-6 relative flex flex-col items-center justify-center text-center text-white h-full px-4">
+      <section className="relative w-full min-h-[912px] flex flex-col">
+        <div className="gap-6 relative flex flex-col items-center justify-center text-center text-white min-h-[912px] px-4">
           {/* Logo */}
           <img src={logo} alt="Logo" className="h-10 w-auto" />
 
@@ -87,7 +87,7 @@ export default function Header() {
           {/* Ícone mouse scroll */}
           <a
             href="#areas"
-            className="absolute bottom-44 sm:bottom-64 flex justify-center cursor-pointer"
+            className="absolute bottom-20 sm:bottom-28 flex justify-center cursor-pointer"
           >
             <ChevronDown className="w-10 h-10 sm:w-12 sm:h-12 animate-bounce text-white" />
           </a>
