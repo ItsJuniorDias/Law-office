@@ -90,7 +90,7 @@ export default function ClientSection() {
   };
 
   return (
-    <section className="w-full bg-gray-50 py-16 px-4 md:px-6 overflow-hidden">
+    <section className="w-full bg-gray-50  py-16 px-4 md:px-6 overflow-hidden">
       {/* Título */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold text-[#0c1725]">
@@ -103,7 +103,7 @@ export default function ClientSection() {
       <div className="max-w-6xl mx-auto relative">
         <Slider {...settings}>
           {testimonials.map((item, index) => (
-            <div key={index} className="px-3">
+            <div key={index} className="px-3 py-3">
               <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col justify-between">
                 {/* Estrelas */}
                 <div className="flex text-yellow-500 mb-3">

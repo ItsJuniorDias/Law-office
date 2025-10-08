@@ -21,11 +21,11 @@ export default function About() {
 
           <h3 className="text-xl md:text-2xl font-semibold leading-snug mb-4">
             Somos os melhores advogados com mais de{" "}
-            <span className="text-yellow-400">25 anos de experiência</span>
+            <span className="text-yellow-400">7 anos de experiência</span>
           </h3>
 
           <p className="text-gray-200 mb-6 leading-relaxed">
-            Com mais de 25 anos de experiência, nossa equipe de advogados
+            Com mais de 7 anos de experiência, nossa equipe de advogados
             altamente qualificados atua em diversas áreas do direito, combinando
             tradição e inovação para oferecer soluções eficazes e
             personalizadas. <br />

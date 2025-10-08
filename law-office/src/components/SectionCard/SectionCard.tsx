@@ -4,9 +4,9 @@ export default function SectionCard() {
       <div className="w-full max-w-[1100px] bg-[#0c1725] flex flex-col md:flex-row items-center justify-around rounded-xl shadow-lg py-10 px-6 md:px-8 gap-8 md:gap-0">
         {/* Bloco 1 */}
         <div className="flex items-center space-x-2 text-white">
-          <span className="text-5xl font-bold text-yellow-500">+15</span>
+          <span className="text-5xl font-bold text-yellow-500">+100</span>
           <div className="flex flex-col leading-tight">
-            <span className="text-xl font-semibold">MIL</span>
+            <span className="text-xl font-semibold"></span>
             <span className="text-sm">Clientes atendidos</span>
           </div>
         </div>
@@ -16,7 +16,7 @@ export default function SectionCard() {
 
         {/* Bloco 2 */}
         <div className="flex items-center space-x-2 text-white">
-          <span className="text-5xl font-bold text-yellow-500">+25</span>
+          <span className="text-5xl font-bold text-yellow-500">+7</span>
           <div className="flex flex-col leading-tight">
             <span className="text-xl font-semibold">ANOS</span>
             <span className="text-sm">de Experiência</span>
@@ -28,9 +28,9 @@ export default function SectionCard() {
 
         {/* Bloco 3 */}
         <div className="flex items-center space-x-2 text-white">
-          <span className="text-5xl font-bold text-yellow-500">+5</span>
+          <span className="text-5xl font-bold text-yellow-500">+250</span>
           <div className="flex flex-col leading-tight">
-            <span className="text-xl font-semibold">MIL</span>
+            <span className="text-xl font-semibold"></span>
             <span className="text-sm">Cases defendidos</span>
           </div>
         </div>

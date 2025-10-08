@@ -1,5 +1,5 @@
 import logoGold from "../../assets/logo-gold.svg";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -15,6 +15,22 @@ export default function Footer() {
               <p className="text-sm">17 99755-8800</p>
             </div>
           </div>
+
+          <div className="flex items-start gap-3 mb-4">
+            <Instagram className="w-5 h-5 text-yellow-500" />
+            <div>
+              <p className="font-semibold">Instagram</p>
+              <a
+                href="https://www.instagram.com/lemessadvocacia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm hover:underline"
+              >
+                @lemessadvocacia
+              </a>
+            </div>
+          </div>
+
           <div className="flex items-start gap-3 mb-4">
             <Mail className="w-5 h-5 text-yellow-500" />
             <div>
@@ -22,11 +38,15 @@ export default function Footer() {
               <p className="text-sm">lemessadvocacia@gmail.com</p>
             </div>
           </div>
+
           <div className="flex items-start gap-3">
-            <MapPin className="w-5 h-5 text-yellow-500" />
+            <MapPin className="w-12 h-12 text-yellow-500" />
             <div>
               <p className="font-semibold">Endereço</p>
-              <p className="text-sm">Av. Lorem Ipsum, 52 - LP, Lorem Ipsum</p>
+              <p className="text-sm">
+                Avenida Cuiabá, 4378, Jardim Bom Clima • Votuporanga/SP - CEP:
+                15500-303.
+              </p>
             </div>
           </div>
         </div>
