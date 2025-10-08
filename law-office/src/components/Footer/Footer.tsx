@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-start gap-3">
-            <MapPin className="w-12 h-12 text-yellow-500" />
+            <MapPin className="w-8 h-8 text-yellow-500" />
             <div>
               <p className="font-semibold">Endereço</p>
               <p className="text-sm">
